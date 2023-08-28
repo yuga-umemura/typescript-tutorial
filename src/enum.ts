@@ -6,14 +6,13 @@ enum Direction {
   Up,
   Down,
   Left,
-  Right 
+  Right
 }
 
 // enum Directionを参照
 let direction: Direction = Direction.Left
 console.log(direction) // 2
 // 特に指定しなかった場合、Enumは定義された順番に沿ってゼロから数字が自動的にインクリメントされる
-
 
 enum Direction2 {
   Up = 'UP',

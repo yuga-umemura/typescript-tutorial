@@ -34,7 +34,7 @@ console.log(r)
 enum PageType {
   ViewProfile,
   EditProfile,
-  ChangePassword,
+  ChangePassword
 }
 
 const getTitleText = (type: PageType) => {

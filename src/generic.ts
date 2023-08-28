@@ -22,4 +22,3 @@ queue.push(112)
 // strはnumber型ではないのでコンパイルエラーになる
 let str = 'fuga'
 // str = queue.pop()
-

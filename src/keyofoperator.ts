@@ -1,8 +1,8 @@
 // 型に対してkeyofオペレーターを用いると、その型がもつ各プロパティの型のUnion型を返す
 interface User5 {
-  name: string;
-  age: number;
-  email: string;
+  name: string
+  age: number
+  email: string
 }
 
 type UserKey = keyof User5 // 'name' | 'age' | 'email' というUnion型となる

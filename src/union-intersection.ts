@@ -20,14 +20,14 @@ function printId2(id: Id) {
 
 // 型エイリアスどうしを掛け合わせて新たな型を定義
 type Identity = {
-  id: number | string;
+  id: number | string
   name: string
 }
 
 type Contact = {
-  name: string;
-  email: string;
-  phone: string;
+  name: string
+  email: string
+  phone: string
 }
 
 // Union型

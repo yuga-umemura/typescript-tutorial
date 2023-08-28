@@ -1,8 +1,8 @@
 interface User {
-  name:string
+  name: string
   social: {
-    facebook:boolean
-    twitter:boolean
+    facebook: boolean
+    twitter: boolean
   }
 }
 

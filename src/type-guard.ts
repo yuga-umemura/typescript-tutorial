@@ -14,14 +14,14 @@ console.log(addOne('20'))
 
 type User4 = {
   info?: {
-    name: string;
-    age: number;
+    name: string
+    age: number
   }
 }
 
 let response = {}
 // responseはJSON形式のAPIレスポンスが代入されている想定。User4型にアサーション
-const user = (response as any) as User4
+const user = response as any as User4
 
 // オプショナルプロパティへの型ガード（if文）
 // if文がないとエラーになる

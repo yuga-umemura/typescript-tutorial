@@ -1,5 +1,5 @@
 function sayHello1(name: string): string {
-  return `Hello ${name}`  
+  return `Hello ${name}`
 }
 
 const greet: string = sayHello1('Yuga')

@@ -1,8 +1,6 @@
 // 型アサーション→	TypeScriptが推論、分析した型は任意の方法で上書きできる
 // https://typescript-jp.gitbook.io/deep-dive/type-system/type-assertion
 
-
-
 // 変数 = 値 as 型
 // const myCanvas = document.getElementById('main_canvas') as HTMLCanvasElement
 
@@ -10,8 +8,8 @@
 const responseAs: String = 'Hello'
 
 type UserAs = {
-  name :string;
-  age: number;
+  name: string
+  age: number
 }
 
-const result = (responseAs as any) as UserAs
+const result = responseAs as any as UserAs

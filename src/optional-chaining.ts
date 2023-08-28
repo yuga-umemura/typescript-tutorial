@@ -11,11 +11,10 @@ interface UserOc {
 
 let userOc: UserOc
 
-userOc = {name: 'Takuya', social: { facebook: true, twitter: true }}
+userOc = { name: 'Takuya', social: { facebook: true, twitter: true } }
 
 console.log(userOc.social?.facebook)
 
 let userOc2: UserOc = { name: 'Takuya' }
 // socialが存在しないケースでもエラーにならない
 console.log(userOc2)
-

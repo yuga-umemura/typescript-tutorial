@@ -22,7 +22,7 @@ array.push('Takuya')
 
 // ジェネリック表記
 const mixedArray = ['foo', 1]
-const mixedArrayU: (string|number)[] = ['foo', 1] // Union型
+const mixedArrayU: (string | number)[] = ['foo', 1] // Union型
 const mixedArrayT: [string, number] = ['foo', 1] // タプル
 
 console.log(mixedArray)
@@ -41,8 +41,8 @@ function printName(obj: { firstName: string; lastName?: string }) {
   console.log(obj.firstName + ' ' + obj.lastName)
 }
 
-printName({firstName: 'Yuga', lastName: 'Umemura'})
-printName({firstName: 'Takuya'})
+printName({ firstName: 'Yuga', lastName: 'Umemura' })
+printName({ firstName: 'Takuya' })
 
 // any:すべての型を許容
-let userCalc2: any = { firstName: 'Takuya'}
+let userCalc2: any = { firstName: 'Takuya' }

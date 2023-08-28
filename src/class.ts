@@ -1,5 +1,5 @@
 type Label = {
-  [key: string] : string
+  [key: string]: string
 }
 
 // 上記型エイリアスを指定して、画面に表示する文字を定義するオブジェクトのキーと値を定義
@@ -13,8 +13,8 @@ const labels: Label = {
 // interfaceは型エイリアスと似ている機能だが、より拡張性の高いオープンな機能を持つ
 
 interface Point {
-  x: number;
-  y: number;
+  x: number
+  y: number
 }
 
 function printPoint(point: Point) {
@@ -24,18 +24,18 @@ function printPoint(point: Point) {
 }
 
 interface Point {
-  z: number;
+  z: number
 }
 
 // printPoint({x: 100, y:100}) 引数にzが存在しないためエラーになる
-printPoint({x: 100, y:100, z:200})
+printPoint({ x: 100, y: 100, z: 200 })
 
 // インターフェースはクラスの振る舞いの型を定義し、implementsを使用してクラスに実装を与えることが可能
 // 例えばzを指定しないとコンパイルエラーになる
 class MyPoint implements Point {
-  x: number;
-  y: number;
-  z: number;
+  x: number
+  y: number
+  z: number
 
   constructor(x: number = 0, y: number = 0, z: number = 0) {
     this.x = x
@@ -45,11 +45,11 @@ class MyPoint implements Point {
 }
 
 interface Colorful {
-  color: string;
+  color: string
 }
 
 interface Circle {
-  radius: number;
+  radius: number
 }
 
 // 複数のインターフェースを継承して新たなインターフェースを定義できる
@@ -61,8 +61,8 @@ const cc: ColorfulCircle = {
 }
 
 class Point2 {
-  x: number;
-  y: number;
+  x: number
+  y: number
 
   // 引数がない場合の初期値を指定
   constructor(x: number = 0, y: number = 0) {
@@ -84,7 +84,7 @@ point.moveX(10)
 console.log(point.x, point.y)
 
 class Point3D extends Point2 {
-  z: number;
+  z: number
 
   constructor(x: number = 0, y: number = 0, z: number = 0) {
     // 継承元のコンストラクタを呼び出す
@@ -104,14 +104,14 @@ point3D.moveZ(20)
 console.log(`${point3D.x}, ${point3D.y}, ${point3D.z}`)
 
 interface IUser {
-  name: string;
-  age: number;
+  name: string
+  age: number
   // sayhello: () => string; 引数なしで文字列を返す
 }
 
 class User2 implements IUser {
-  name: string;
-  age: number;
+  name: string
+  age: number
 
   constructor() {
     this.name = ' '
@@ -130,14 +130,14 @@ console.log(userClass.sayHello())
 
 // アクセス修飾子を指定しない場合はpublic
 class BasePoint3D {
-  public x: number;
-  private y: number; // 自身のクラスからのみアクセス可
-  protected z:  number; // 自身のクラスとサブクラスからのみアクセス可
+  public x: number
+  private y: number // 自身のクラスからのみアクセス可
+  protected z: number // 自身のクラスとサブクラスからのみアクセス可
 
   constructor(x: number = 0, y: number = 0, z: number = 0) {
-    this.x = x;
-    this.y = y;
-    this.z = z;
+    this.x = x
+    this.y = y
+    this.z = z
   }
 }
 
